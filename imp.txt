@@ -1,0 +1,18 @@
+import requests
+from os import getcwd
+
+url = "https://github.boschdevcloud.com/MANI1KOR/Assignment/blob/main/index.txt"
+directory = getcwd()
+filename = directory + 'index.txt'
+r = requests.get(url)
+
+f = open(filename,'w')
+f.write(r.content)
+
+
+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
+
+
+
+
+GitHub - repoog/GitPrey: Searching sensitive files and contents in GitHub associated to company name or other key words
